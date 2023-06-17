@@ -31,7 +31,7 @@ StaticPopupDialogs["SMELLS_OF_CURSE"] = {
     text = "Doch!",
     button1 = "OK",
     OnAccept = function()
-        
+        PlaySoundFile(MoanSound, "MASTER")
     end,
     timeout = 0,
     whileDead = true,
