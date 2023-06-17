@@ -1,13 +1,13 @@
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("PLAYER_LOGIN")
 
-local MoanSound = "Interface\\Addons\\MyFugginAddon\\sounds\\moan2.mp3"
-
-local function OnEvent(self, event, ...)
+local function OnEvent(self, event, message, author, ...)
     if event == "PLAYER_LOGIN" then
         StaticPopup_Show("WELCOME_MESSAGE")
     end
 end
+
+local MoanSound = "Interface\\Addons\\MyFugginAddon\\sounds\\moan2.mp3"
 
 frame:SetScript("OnEvent", OnEvent)
 
@@ -38,3 +38,8 @@ StaticPopupDialogs["SMELLS_OF_CURSE"] = {
     hideOnEscape = true,
     preferredIndex = 3 
 }
+
+SLASH_CHAT1 = "/mirko"
+SlashCmdList["CHAT"] = function(msg)
+    StaticPopup_Show("WELCOME_MESSAGE")
+end
