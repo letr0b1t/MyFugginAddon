@@ -1,7 +1,7 @@
 local frame = CreateFrame("Frame")
 frame:RegisterEvent("PLAYER_LOGIN")
 
-local MoanSound = "Interface\\Addons\\MyFugginAddon\\sounds\\moan.mp3"
+local MoanSound = "Interface\\Addons\\MyFugginAddon\\sounds\\moan2.mp3"
 
 local function OnEvent(self, event, ...)
     if event == "PLAYER_LOGIN" then
