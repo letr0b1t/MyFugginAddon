@@ -1,6 +1,6 @@
 ## Interface 30401
 ## Title: MyFugginAddon
 ## Author: Letr0b1t
-## Version: 1.1
+## Version: 1.2
 
 main.lua
